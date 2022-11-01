@@ -31,9 +31,13 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
   List<Icon> scoreKeeper = [];
+  int _rightAnswersCount = 0;
 
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = quizBrain.getCorrectAnswer();
+    if (userPickedAnswer == correctAnswer) {
+      _rightAnswersCount++;
+    }
 
     setState(() {
       //TODO: Step 4 - Use IF/ELSE to check if we've reached the end of the quiz. If so,
@@ -48,7 +52,7 @@ class _QuizPageState extends State<QuizPage> {
         Alert(
           context: context,
           title: 'Finished!',
-          desc: 'You\'ve reached the end of the quiz.',
+          desc: 'Your score is $_rightAnswersCount out of 15',
         ).show();
 
         //TODO Step 4 Part C - reset the questionNumber,
