@@ -4,31 +4,38 @@ class QuizBrain {
   int _questionNumber = 0;
 
   List<Question> _questionBank = [
-    Question('Some cats are actually allergic to humans', true),
-    Question('You can lead a cow down stairs but not up stairs.', false),
-    Question('Approximately one quarter of human bones are in the feet.', true),
-    Question('A slug\'s blood is green.', true),
-    Question('Buzz Aldrin\'s mother\'s maiden name was \"Moon\".', true),
-    Question('It is illegal to pee in the Ocean in Portugal.', true),
+    Question('A golf ball is the fastest recorded object in sports.', false),
     Question(
-        'No piece of square dry paper can be folded in half more than 7 times.',
+        'Paul Gascoigne has won the BBC Sports Personality of the Year Award.',
+        true),
+    Question(
+        'In the Summer Olympics, Michael Phelps has won more gold medals than the country Greece.',
         false),
+    Question('Sue Barker has won a tennis Grand Slam tournament.', true),
     Question(
-        'In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.',
+        'Cheetahs were raced at Romford Greyhound Stadium in 1937 in an effort to increase attendances.',
         true),
-    Question(
-        'The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.',
+    Question('The Indy 500 automobile race is actually raced over 300 miles.',
         false),
-    Question(
-        'The total surface area of two human lungs is approximately 70 square metres.',
-        true),
-    Question('Google was originally called \"Backrub\".', true),
-    Question(
-        'Chocolate affects a dog\'s heart and nervous system; a few ounces are enough to kill a small dog.',
+    Question('Steve Cram won an Olympic gold medal.', false),
+    Question('North Korea beat Italy in the finals of the 1966 FIFA World Cup.',
         true),
     Question(
-        'In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.',
+        'Basketball player Michael jordan was 6 feet 1 inches tall.', false),
+    Question(
+        'Rugby coach Eddie Jones played in the position of scrum-half during his playing years.',
         true),
+    Question('Mike Tyssen bit Evander Holyfield on both ears.', true),
+    Question(
+        'Gary Lineker never got a yellow card in his entire senior career.',
+        true),
+    Question(
+        'During a recognised tournament, Ronnie O\'Sullivan compiled a maximum 147 break at the age of 15.',
+        true),
+    Question(
+        'Golf\'s Walker Cup is named after the great-grandfather of President George W. Bush.',
+        true),
+    Question('Leicester won the Premier League in the 2016-17 season.', false),
   ];
 
   void nextQuestion() {
